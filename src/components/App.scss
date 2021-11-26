@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.section {
+  flex-basis: 45%;
+}
+
+.sr-only {
+  overflow: hidden;
+}
