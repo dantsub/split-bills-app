@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.scss';
 
-const Menu = ({ menuList }) => {
+const Menu = ({ order, handleClickPlus, handleClickMinus }) => {
+
   return (
     <section className="menu">
       <h3 className="menu__title">Menu</h3>
@@ -13,15 +14,16 @@ const Menu = ({ menuList }) => {
           <p className="item">Acción</p>
         </li>
         {
-          menuList.map((item, index) => {
+          order.map((item, index) => {
             return (
               <li className="menu__item" key={index}>
                 <p className="item">{item.name}</p>
+
                 <p className="item item--right">{item.price}</p>
                 <p className="item">{item.quantity}</p>
                 <div className="item">
-                  <button className="btn">+</button>
-                  <button className="btn">-</button>
+                  <button className="btn" onClick={() => {handleClickPlus(item)}}>+</button>
+                  <button className="btn" onClick={() => {handleClickMinus(item)}}>-</button>
                 </div>
               </li>
             )
