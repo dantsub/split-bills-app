@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/split-bills-app/static/css/main.53783d5a.chunk.css",
+    "main.js": "/split-bills-app/static/js/main.6b7194f7.chunk.js",
+    "main.js.map": "/split-bills-app/static/js/main.6b7194f7.chunk.js.map",
+    "runtime-main.js": "/split-bills-app/static/js/runtime-main.ddb17ba3.js",
+    "runtime-main.js.map": "/split-bills-app/static/js/runtime-main.ddb17ba3.js.map",
+    "static/js/2.2a4a5ef0.chunk.js": "/split-bills-app/static/js/2.2a4a5ef0.chunk.js",
+    "static/js/2.2a4a5ef0.chunk.js.map": "/split-bills-app/static/js/2.2a4a5ef0.chunk.js.map",
+    "index.html": "/split-bills-app/index.html",
+    "static/css/main.53783d5a.chunk.css.map": "/split-bills-app/static/css/main.53783d5a.chunk.css.map",
+    "static/js/2.2a4a5ef0.chunk.js.LICENSE.txt": "/split-bills-app/static/js/2.2a4a5ef0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ddb17ba3.js",
+    "static/js/2.2a4a5ef0.chunk.js",
+    "static/css/main.53783d5a.chunk.css",
+    "static/js/main.6b7194f7.chunk.js"
+  ]
+}
