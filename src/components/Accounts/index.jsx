@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 
 const Accounts = ({ order, setAmount }) => {
-  const [tip, setTip] = useState(0.10);
-
+  const tip = 0.10;
   const subtotal = order.filter((ord) => ord.quantity).reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
   const tipTotal = subtotal * tip;
   const total = subtotal + tipTotal;
-  setAmount(total);
+  useEffect(() => {
+    setAmount(total);
+  },[total, setAmount]);
 
   return (
     <section className="accounts">
-      <h3 className="accounts__title">Cuentas</h3>
+      <h3 className="sr-only">Accounts section</h3>
       <ul className="accounts__list">
         <li className="accounts__item">
-          <p className="accounte__element">Subtotal:</p> <p className="accounts__element">${subtotal}</p>
+          <p>Subtotal:</p> <p>${subtotal}</p>
         </li>
         <li className="accounts__item">
-          <p className="accounte__element">Propina:</p> <p className="accounts__element">${tipTotal}</p> <p className="account__element">{tip * 100}%</p> <button className="btn">Cambiar</button>
+          <p>Tip ({tip * 100}%)</p> <p>${tipTotal}</p>
         </li>
-        <li className="accounts__item">
-          <p className="accounte__element">Total:</p> <p className="accounts__element">${total}</p>
+        <li className="accounts__item accounts__item--green">
+          <p>Total:</p> <p>${total}</p>
         </li>
       </ul>
     </section>

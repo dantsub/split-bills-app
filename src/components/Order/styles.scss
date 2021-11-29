@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+@import "../styles/helpers.scss";
+
+.order {
+  &__title {
+    color: $dark-orange;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
+    border-bottom: 3px solid $dark-orange;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $dark-green;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../styles/variables.scss";
+@import "../styles/helpers.scss";
+
+.pay {
+  &__total {
+    background-color: $base-orange;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 1rem 0;
+  }
+}

@@ -1,12 +1,22 @@
+@import "./styles/normalize.scss";
+@import "./styles/variables.scss";
+@import "./styles/helpers.scss";
+
+* {
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
 }
-.section {
+.menu-section {
+  flex-basis: 55%;
+  padding: 0 2rem;
+}
+.order-section {
+  background-color: $white;
   flex-basis: 45%;
+  box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 37px 22px;
 }
 
-.sr-only {
-  overflow: hidden;
-}

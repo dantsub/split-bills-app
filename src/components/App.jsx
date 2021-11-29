@@ -3,10 +3,13 @@ import Menu from './Menu';
 import menuList from '../mocks/plates';
 import Accounts from './Accounts';
 import Pay from './Pay';
+import Header from './Header';
 import { useState } from 'react';
+import Order from './Order';
 
 function App() {
-  const [order, setOrder] = useState(menuList);
+  const newMenu = menuList.map(item => {return {...item, quantity: 0}});
+  const [order, setOrder] = useState(newMenu);
   const [amount, setAmount] = useState(0);
 
   const handleClickPlus = (item) => {
@@ -33,17 +36,21 @@ function App() {
   }
 
   return (
+    <>
+    <Header />
     <section className="container">
-      <section className="section">
+      <section className="menu-section">
         <h2 className="sr-only">Sección de menu y pedidos</h2>
-        <Menu order={order} handleClickMinus={handleClickMinus} handleClickPlus={handleClickPlus} />
+        <Menu menuList={menuList} handleClickMinus={handleClickMinus} handleClickPlus={handleClickPlus} />
       </section>
-      <section className="section">
+      <section className="order-section">
         <h2 className="sr-only">Sección de pago</h2>
+        <Order order={order} />
         <Accounts order={order} setAmount={setAmount} />
         <Pay amount={amount} />
       </section>
     </section>
+    </>
   );
 }
 

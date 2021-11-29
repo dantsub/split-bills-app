@@ -1,42 +1,42 @@
 const plates = [
   {
+    id: 0,
     name: 'Pizza',
-    quantity: 0,
     price: 25000
   },
   {
+    id: 1,
     name: 'Burger',
-    quantity: 0,
     price: 15000
   },
   {
+    id: 2,
     name: 'Coffee',
-    quantity: 0,
     price: 5000
   },
   {
+    id: 3,
     name: 'Tea',
-    quantity: 0,
     price: 2000
   },
   {
+    id: 4,
     name: 'Cake',
-    quantity: 0,
     price: 10000
   },
   {
+    id: 5,
     name: 'Cupcake',
-    quantity: 0,
     price: 5000
   },
   {
+    id: 6,
     name: 'Sandwich',
-    quantity: 0,
     price: 15000
   },
   {
+    id: 7,
     name: 'Noodles',
-    quantity: 0,
     price: 15000
   }
 ];
