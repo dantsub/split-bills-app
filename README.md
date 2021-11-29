@@ -20,7 +20,9 @@ When taking out the bill you can choose one of the following options:
 
 ## Mockups
 
-![mockup](https://i.ibb.co/55ncYHj/split-bills-app.png)
+![mockup](https://i.ibb.co/QKSMRzW/split-bills-app.png)
+
+Link figma: `https://www.figma.com/file/QId2Lr6lXbR0ejT493fgpO/split-bills-app?node-id=0%3A1`
 
 ## Deploy
 
