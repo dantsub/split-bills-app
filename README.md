@@ -20,7 +20,7 @@ When taking out the bill you can choose one of the following options:
 
 ## Mockups
 
-![mockup](https://i.ibb.co/55ncYHj/split-bills-app.png)
+![mockup](https://i.ibb.co/QKSMRzW/split-bills-app.png)
 
 ## Deploy
 
