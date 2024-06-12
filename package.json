@@ -4,21 +4,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@vitejs/plugin-react": "^4.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "sass": "^1.43.5",
-    "web-vitals": "^1.1.2"
+    "sass": "^1.77.5",
+    "vite": "^5.2.13",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -40,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "vitest": "^1.6.0"
   }
 }
