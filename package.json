@@ -4,18 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "sass": "^1.77.5",
-    "vite": "^5.2.13",
-    "vite-tsconfig-paths": "^4.3.2"
+    "react-dom": "^17.0.2"
   },
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "vi:test": "vitest",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d build"
   },
@@ -38,7 +34,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "vitest": "^1.6.0"
+    "@vitejs/plugin-react": "^4.7.0",
+    "gh-pages": "^6.3.0",
+    "vitest": "^1.6.1",
+    "vite": "^5.4.21",
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }
